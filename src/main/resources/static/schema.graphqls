@@ -1,0 +1,45 @@
+type Query {
+    bookById(id: ID): Book
+    allBook : [Book]
+    allAuthor : [Author]
+    specificEvent(id : ID) :EventDto
+    allEvents:[EventDto]
+    allEventsApi : [EventDto]
+}
+
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}
+
+type EventDto{
+    id : ID
+    start : String
+    end : String
+    staff: Staff
+    customer : Customer
+}
+
+type Staff {
+    id : ID
+    firstName : String
+    lastName : String
+}
+
+type Customer {
+    id : ID
+    firstName : String
+    lastName : String
+}
+
+
+
+
