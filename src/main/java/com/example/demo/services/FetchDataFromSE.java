@@ -69,12 +69,6 @@ public class FetchDataFromSE {
         String text = new Scanner(inputStream, "UTF-8").useDelimiter("\\Z").next();
         return text;
     }
-    public static void main(String args[]){
-        System.out.println(new FetchDataFromSE().fetch());
-        String url = "https://staging-schedulingengine.appspot.com/fetch/events/se?q={%22limit%22:50,%22calendarIds%22:[%2290fb0729-d07e-45ee-a042-8b27ef67c0e5%22],%22providerIds%22:[%22r6c571d8976c7307f143ed010a7860d194fe386ce%22],%22startTime%22:1557685800000,%22endTime%22:1558290600000}";
-
-        System.out.println(jsonGetRequest(url));
-    }
 
 }
 
