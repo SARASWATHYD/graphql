@@ -39,8 +39,7 @@ public class GraphQLProvider {
         this.graphQL =  GraphQL.newGraphQL(graphQLSchema).build();
         GraphQLDataFetchers.fetchEventsFromApi();
         
-//        ExecutionResult executionResult  = graphQL.execute("{bookById(id: book-2)}");
-//        System.out.println(executionResult.getData().toString());
+
     }
 
     private GraphQLSchema buildSchema(String sdl) {

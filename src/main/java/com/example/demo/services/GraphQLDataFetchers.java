@@ -97,7 +97,6 @@ public class GraphQLDataFetchers {
 
     public DataFetcher getALlBookFetcher() {
         return dataFetchingEnvironment -> {
-//            String bookId = dataFetchingEnvironment.getArgument("id");
             return books
                     .stream().collect(Collectors.toList());
         };
